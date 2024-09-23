@@ -107,3 +107,95 @@ Os **microserviços** são um estilo arquitetural onde um sistema é dividido em
 - **Escalabilidade**: Serviços individuais podem ser escalados de forma independente conforme necessário.
 
 ---
+# Estudo para Prova de Design Patterns
+
+## 1. **Padrões de Projeto**
+
+**Padrões de Projeto** são soluções comprovadas que promovem a reutilização de código, facilitam a manutenção e a comunicação entre desenvolvedores, além de melhorar a escalabilidade e a flexibilidade dos sistemas.
+
+### **Principais Benefícios**:
+- **Manutenção**: Evita a necessidade de "reinventar a roda".
+- **Comunicação**: Conceitos complexos são identificados por nomes simples (ex.: Singleton, Factory).
+  
+## 2. **Padrão Singleton**
+
+### **Problema**: Garantir que apenas uma instância de um objeto exista e seja acessível globalmente no sistema.
+
+### **Aplicação**:
+- Controla o acesso a recursos críticos (ex.: arquivo de configuração).
+- Exemplo: Garantir que apenas um usuário autenticado por vez acesse o recurso crítico de um sistema.
+
+### **Vantagens**:
+- Mantém a consistência dos dados.
+- Evita problemas de concorrência.
+  
+## 3. **Padrão Builder**
+
+### **Problema**: Criação de objetos complexos com múltiplas etapas.
+
+### **Benefícios**:
+- Separação do processo de construção e a representação de um objeto.
+- Permite criar diferentes representações de um objeto.
+
+### **Aplicação**:
+- Útil para objetos com muitos parâmetros opcionais ou processos de construção complexos.
+
+### **Exemplo de Aplicação**:
+- Um construtor pode ser utilizado para criar um mesmo objeto de várias formas, dependendo dos parâmetros.
+
+## 4. **Padrão Facade**
+
+### **Problema**: Sistemas complexos com muitas interações internas difíceis de controlar.
+
+### **Solução**: Fornece uma interface simplificada para um conjunto de classes complexas, ocultando a complexidade interna.
+
+### **Benefícios**:
+- Facilita o uso de sistemas complexos.
+- Reduz a dependência do código em subsistemas complexos.
+
+### **Exemplo de Aplicação**:
+- Um Facade pode ser usado para fornecer um ponto de acesso simples para bibliotecas ou subsistemas complexos.
+
+## 5. **Padrão Adapter**
+
+### **Problema**: Integração de sistemas ou classes com interfaces incompatíveis.
+
+### **Solução**: Converte a interface de uma classe em uma interface que um cliente espera, facilitando a integração.
+
+### **Benefícios**:
+- Permite que sistemas legados se conectem a novos sistemas.
+- Tradução de chamadas feitas pelos clientes para interfaces incompatíveis.
+
+### **Exemplo de Aplicação**:
+- Permitir que um sistema antigo se comunique com um novo sistema sem modificar o código original.
+
+## 6. **Padrões Estruturais**
+
+### **Objetivo**: Resolver problemas relacionados à composição de classes e objetos, formando estruturas maiores e mais flexíveis.
+
+### **Principais Benefícios**:
+- **Flexibilidade na Composição**: Permite organizar classes de forma mais flexível.
+- **Manutenção e Extensão**: Facilita a manutenção e extensão do sistema.
+- **Simplificação da Complexidade**: Simplifica a estrutura do sistema.
+
+### **Exemplo de Aplicação**:
+- O padrão **Flyweight** é um exemplo de padrão estrutural que otimiza o uso de memória ao compartilhar objetos entre contextos semelhantes.
+
+---
+
+## Questões para Estudo
+
+1. **Qual o objetivo do padrão Singleton?**
+   - Garantir que apenas uma instância de um objeto seja criada e compartilhada por todo o sistema.
+
+2. **Quando utilizar o padrão Builder?**
+   - Quando a criação de objetos envolve muitos parâmetros opcionais ou etapas de construção complexas.
+
+3. **Como o padrão Facade auxilia no desenvolvimento de sistemas?**
+   - Ele simplifica a interface de um subsistema complexo, facilitando o uso e manutenção.
+
+4. **Qual o papel do padrão Adapter?**
+   - Adaptar uma interface incompatível para que dois sistemas possam se comunicar.
+
+5. **Quais os principais benefícios dos padrões estruturais?**
+   - Flexibilidade na composição, simplificação da complexidade e melhoria na manutenção/extensão do sistema.
